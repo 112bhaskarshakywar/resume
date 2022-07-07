@@ -1,0 +1,143 @@
+body{
+    display: flex;
+    justify-content: center;   
+    color: rgb(43, 44, 46);
+}
+.main-content{    
+    display: grid;
+    width: 90%;
+    grid-template-columns: 300px 700px;
+    height: 1000px;  
+}
+.left-section{
+    background-color: rgb(58, 74, 85);
+    color: whitesmoke;
+}
+.right-section{
+    /* background-color: rgb(87, 137, 175);  
+     */
+     background-color: rgb(233, 217, 233);
+}
+.left-content{
+    padding: 1rem;
+}
+.profile-pic{
+    display: block;
+    margin: auto;
+    border: 5px white solid;
+    border-radius: 30%;
+    width: 60%;
+    height: 40%;
+}
+.name{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-variant-caps: all-petite-caps;
+    letter-spacing: 0.02px ;
+    padding :0.8rem;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    font-variant-caps: all-petite-caps;
+    padding-bottom: 0.5rem;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+.contact-item{
+    height: 10%;  
+    padding-top: 30px; 
+    /* optional */
+}
+#items{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.icon{
+    border-radius: 50%;
+    border: none;
+    width: 40px;
+    height:40px;
+}
+.skills h2{
+    font-size: 0.75rem;
+    text-align: center;
+    font-variant-caps: all-petite-caps;
+    padding: 1rem 0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.progress-bar{
+    border: 1px white solid;
+    height: 4px;
+  
+    
+}
+progress[value]{
+    -webkit-appearance: none;
+    appearance: none;
+
+}
+progress[value]::-webkit-progress-bar{
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.right-title{
+    font-variant-caps: all-petite-caps;
+    font-size: 1.2rem ;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+   /* text-underline-offset: 2px; */
+    
+}
+.inRight-leftSection{
+    width: 70%;
+}
+.inRight-rightSection{
+    width: 30%;
+}
+p {
+    font-size: 14px;
+}
+
+
+
+
+/* For desktop: */
+/* .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;} */
+/* .col-1 { width: 300px;}
+.col-2 { width: 700px;} */
+
+@media only screen and (max-width: 674px) {
+  /* For mobile phones: */
+  .main-content{
+    grid-template-columns: repeat(1,1fr);
+  }
+  
+}
